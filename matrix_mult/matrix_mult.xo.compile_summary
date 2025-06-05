@@ -1,0 +1,237 @@
+<ENTRY>
+{
+ "thisFile": "/home/vlsi-elka/vitis_hls_project/matrix_mult/matrix_mult.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Mar 12 13:35:52 2025",
+ "timestampMillis": "1741761352465",
+ "buildStep": {
+  "cmdId": "9702bc87-41e9-48f4-8797-ed15f7c3a47a",
+  "name": "v++",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/matrix_mult/_x/matrix_mult/matrix_mult.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c -t hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 --save-temps -k matrix_mult -o matrix_mult.xo src/matrix_mult.cpp ",
+  "args": [
+   "-c",
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "--save-temps",
+   "-k",
+   "matrix_mult",
+   "-o",
+   "matrix_mult.xo",
+   "src/matrix_mult.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/matrix_mult"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Mar 12 13:35:52 2025",
+ "timestampMillis": "1741761352465",
+ "status": {
+  "cmdId": "9702bc87-41e9-48f4-8797-ed15f7c3a47a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Mar 12 13:35:56 2025",
+ "timestampMillis": "1741761356318",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrix_mult",
+     "file": "/home/vlsi-elka/vitis_hls_project/matrix_mult/matrix_mult.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vlsi-elka/vitis_hls_project/matrix_mult/src/matrix_mult.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.2. SW Build 5239630 on 2024-11-10-11:19:46"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Mar 12 13:35:56 2025",
+ "timestampMillis": "1741761356320",
+ "buildStep": {
+  "cmdId": "9b9cf7b4-a6f7-4e66-8836-c9a92846f102",
+  "name": "vitis_hls",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/matrix_mult/_x/matrix_mult/matrix_mult/vitis_hls.log",
+  "commandLine": "-exec vitis_hls -f matrix_mult.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "-exec",
+   "vitis_hls",
+   "-f",
+   "matrix_mult.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/matrix_mult"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Mar 12 13:35:56 2025",
+ "timestampMillis": "1741761356320",
+ "status": {
+  "cmdId": "9b9cf7b4-a6f7-4e66-8836-c9a92846f102",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Mar 12 13:36:26 2025",
+ "timestampMillis": "1741761386645",
+ "status": {
+  "cmdId": "9b9cf7b4-a6f7-4e66-8836-c9a92846f102",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 12 13:36:26 2025",
+ "timestampMillis": "1741761386650",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/matrix_mult/_x/matrix_mult/matrix_mult/matrix_mult/solution/.autopilot/db/matrix_mult.design.xml",
+  "name": "matrix_mult",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 12 13:36:26 2025",
+ "timestampMillis": "1741761386650",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/matrix_mult/_x/matrix_mult/matrix_mult/matrix_mult/solution/.autopilot/db/.message_syn.xml",
+  "name": "matrix_mult",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 12 13:36:26 2025",
+ "timestampMillis": "1741761386651",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/matrix_mult/_x/reports/matrix_mult/hls_reports/matrix_mult_csynth.rpt",
+  "name": "matrix_mult",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 12 13:36:26 2025",
+ "timestampMillis": "1741761386651",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/matrix_mult/_x/matrix_mult/matrix_mult/matrix_mult/solution/syn/report/matrix_mult_csynth.xml",
+  "name": "matrix_mult",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 12 13:36:26 2025",
+ "timestampMillis": "1741761386653",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/matrix_mult/_x/reports/matrix_mult/system_estimate_matrix_mult.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Mar 12 13:36:26 2025",
+ "timestampMillis": "1741761386684",
+ "status": {
+  "cmdId": "9702bc87-41e9-48f4-8797-ed15f7c3a47a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 12 13:36:26 2025",
+ "timestampMillis": "1741761386746",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/matrix_mult/_x/reports/matrix_mult/v++_compile_matrix_mult_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Mar 12 13:36:26 2025",
+ "timestampMillis": "1741761386747",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/matrix_mult/_x/v++_compile_matrix_mult_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,238 @@
+<ENTRY>
+{
+ "thisFile": "/home/vlsi-elka/vitis_hls_project/vadd_example/vadd_hw.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed May  7 15:11:35 2025",
+ "timestampMillis": "1746605495652",
+ "buildStep": {
+  "cmdId": "eee6f2f6-5c03-4cd6-84ff-40a934943188",
+  "name": "v++",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/vadd_example/_x/vadd_hw/vadd_hw.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c --target hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 -k vadd -I . -o vadd_hw.xo vadd.cpp ",
+  "args": [
+   "-c",
+   "--target",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-k",
+   "vadd",
+   "-I",
+   ".",
+   "-o",
+   "vadd_hw.xo",
+   "vadd.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/vadd_example"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May  7 15:11:35 2025",
+ "timestampMillis": "1746605495652",
+ "status": {
+  "cmdId": "eee6f2f6-5c03-4cd6-84ff-40a934943188",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed May  7 15:11:39 2025",
+ "timestampMillis": "1746605499529",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "vadd",
+     "file": "/home/vlsi-elka/vitis_hls_project/vadd_example/vadd_hw.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vlsi-elka/vitis_hls_project/vadd_example/vadd.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.2. SW Build 5239630 on 2024-11-10-11:19:46"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed May  7 15:11:39 2025",
+ "timestampMillis": "1746605499530",
+ "buildStep": {
+  "cmdId": "912472a8-2771-4ef2-b095-e48cf163c68e",
+  "name": "vitis_hls",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/vadd_example/_x/vadd_hw/vadd/vitis_hls.log",
+  "commandLine": "-exec vitis_hls -f vadd.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "-exec",
+   "vitis_hls",
+   "-f",
+   "vadd.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/vadd_example"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May  7 15:11:39 2025",
+ "timestampMillis": "1746605499531",
+ "status": {
+  "cmdId": "912472a8-2771-4ef2-b095-e48cf163c68e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May  7 15:12:07 2025",
+ "timestampMillis": "1746605527414",
+ "status": {
+  "cmdId": "912472a8-2771-4ef2-b095-e48cf163c68e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May  7 15:12:07 2025",
+ "timestampMillis": "1746605527420",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/vadd_example/_x/vadd_hw/vadd/vadd/solution/.autopilot/db/vadd.design.xml",
+  "name": "vadd",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May  7 15:12:07 2025",
+ "timestampMillis": "1746605527420",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/vadd_example/_x/vadd_hw/vadd/vadd/solution/.autopilot/db/.message_syn.xml",
+  "name": "vadd",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May  7 15:12:07 2025",
+ "timestampMillis": "1746605527421",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/vadd_example/_x/reports/vadd_hw/hls_reports/vadd_csynth.rpt",
+  "name": "vadd",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May  7 15:12:07 2025",
+ "timestampMillis": "1746605527422",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/vadd_example/_x/vadd_hw/vadd/vadd/solution/syn/report/vadd_csynth.xml",
+  "name": "vadd",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May  7 15:12:07 2025",
+ "timestampMillis": "1746605527424",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/vadd_example/_x/reports/vadd_hw/system_estimate_vadd_hw.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May  7 15:12:07 2025",
+ "timestampMillis": "1746605527477",
+ "status": {
+  "cmdId": "eee6f2f6-5c03-4cd6-84ff-40a934943188",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May  7 15:12:07 2025",
+ "timestampMillis": "1746605527542",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/vadd_example/_x/reports/vadd_hw/v++_compile_vadd_hw_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May  7 15:12:07 2025",
+ "timestampMillis": "1746605527542",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/vadd_example/_x/v++_compile_vadd_hw_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

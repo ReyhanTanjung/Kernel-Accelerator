@@ -1,0 +1,238 @@
+<ENTRY>
+{
+ "thisFile": "/home/vlsi-elka/vitis_hls_project/softmax/softmax.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon May 12 18:19:59 2025",
+ "timestampMillis": "1747048799751",
+ "buildStep": {
+  "cmdId": "0575315c-f3a5-4950-8948-d0f0a281610d",
+  "name": "v++",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/softmax/_x/softmax/softmax.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c --target hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 -k softmax -I . -o softmax.xo softmax.cpp ",
+  "args": [
+   "-c",
+   "--target",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-k",
+   "softmax",
+   "-I",
+   ".",
+   "-o",
+   "softmax.xo",
+   "softmax.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/softmax"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 12 18:19:59 2025",
+ "timestampMillis": "1747048799751",
+ "status": {
+  "cmdId": "0575315c-f3a5-4950-8948-d0f0a281610d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon May 12 18:20:03 2025",
+ "timestampMillis": "1747048803906",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "softmax",
+     "file": "/home/vlsi-elka/vitis_hls_project/softmax/softmax.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vlsi-elka/vitis_hls_project/softmax/softmax.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.2. SW Build 5239630 on 2024-11-10-11:19:46"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May 12 18:20:03 2025",
+ "timestampMillis": "1747048803907",
+ "buildStep": {
+  "cmdId": "874be350-4582-4960-bfb2-34f27d2c8a36",
+  "name": "vitis_hls",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/softmax/_x/softmax/softmax/vitis_hls.log",
+  "commandLine": "-exec vitis_hls -f softmax.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "-exec",
+   "vitis_hls",
+   "-f",
+   "softmax.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/softmax"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 12 18:20:03 2025",
+ "timestampMillis": "1747048803908",
+ "status": {
+  "cmdId": "874be350-4582-4960-bfb2-34f27d2c8a36",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 12 18:20:39 2025",
+ "timestampMillis": "1747048839759",
+ "status": {
+  "cmdId": "874be350-4582-4960-bfb2-34f27d2c8a36",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 18:20:39 2025",
+ "timestampMillis": "1747048839807",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/softmax/_x/softmax/softmax/softmax/solution/.autopilot/db/softmax.design.xml",
+  "name": "softmax",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 18:20:39 2025",
+ "timestampMillis": "1747048839807",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/softmax/_x/softmax/softmax/softmax/solution/.autopilot/db/.message_syn.xml",
+  "name": "softmax",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 18:20:39 2025",
+ "timestampMillis": "1747048839808",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/softmax/_x/reports/softmax/hls_reports/softmax_csynth.rpt",
+  "name": "softmax",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 18:20:39 2025",
+ "timestampMillis": "1747048839808",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/softmax/_x/softmax/softmax/softmax/solution/syn/report/softmax_csynth.xml",
+  "name": "softmax",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 18:20:39 2025",
+ "timestampMillis": "1747048839815",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/softmax/_x/reports/softmax/system_estimate_softmax.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 12 18:20:41 2025",
+ "timestampMillis": "1747048841530",
+ "status": {
+  "cmdId": "0575315c-f3a5-4950-8948-d0f0a281610d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 18:20:41 2025",
+ "timestampMillis": "1747048841595",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/softmax/_x/reports/softmax/v++_compile_softmax_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 18:20:41 2025",
+ "timestampMillis": "1747048841595",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/softmax/_x/v++_compile_softmax_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

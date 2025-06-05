@@ -1,0 +1,238 @@
+<ENTRY>
+{
+ "thisFile": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer/fully_cunnected.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue May 20 20:07:51 2025",
+ "timestampMillis": "1747746471209",
+ "buildStep": {
+  "cmdId": "cd5b3c73-dab8-4bb9-9f08-c2574111a46c",
+  "name": "v++",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer/_x/fully_cunnected/fully_cunnected.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c --target hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 -k fully_connected -I . -o fully_cunnected.xo fully_connected.cpp ",
+  "args": [
+   "-c",
+   "--target",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-k",
+   "fully_connected",
+   "-I",
+   ".",
+   "-o",
+   "fully_cunnected.xo",
+   "fully_connected.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 20 20:07:51 2025",
+ "timestampMillis": "1747746471209",
+ "status": {
+  "cmdId": "cd5b3c73-dab8-4bb9-9f08-c2574111a46c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue May 20 20:07:56 2025",
+ "timestampMillis": "1747746476238",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fully_connected",
+     "file": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer/fully_cunnected.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vlsi-elka/vitis_hls_project/fully_connected_layer/fully_connected.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.2. SW Build 5239630 on 2024-11-10-11:19:46"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue May 20 20:07:56 2025",
+ "timestampMillis": "1747746476240",
+ "buildStep": {
+  "cmdId": "8483a3a4-a7a8-4f7f-8feb-398035935b11",
+  "name": "vitis_hls",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer/_x/fully_cunnected/fully_connected/vitis_hls.log",
+  "commandLine": "-exec vitis_hls -f fully_connected.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "-exec",
+   "vitis_hls",
+   "-f",
+   "fully_connected.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 20 20:07:56 2025",
+ "timestampMillis": "1747746476241",
+ "status": {
+  "cmdId": "8483a3a4-a7a8-4f7f-8feb-398035935b11",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 20 20:08:29 2025",
+ "timestampMillis": "1747746509836",
+ "status": {
+  "cmdId": "8483a3a4-a7a8-4f7f-8feb-398035935b11",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 20:08:29 2025",
+ "timestampMillis": "1747746509868",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer/_x/fully_cunnected/fully_connected/fully_connected/solution/.autopilot/db/fully_connected.design.xml",
+  "name": "fully_connected",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 20:08:29 2025",
+ "timestampMillis": "1747746509868",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer/_x/fully_cunnected/fully_connected/fully_connected/solution/.autopilot/db/.message_syn.xml",
+  "name": "fully_connected",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 20:08:29 2025",
+ "timestampMillis": "1747746509869",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer/_x/reports/fully_cunnected/hls_reports/fully_connected_csynth.rpt",
+  "name": "fully_connected",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 20:08:29 2025",
+ "timestampMillis": "1747746509870",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer/_x/fully_cunnected/fully_connected/fully_connected/solution/syn/report/fully_connected_csynth.xml",
+  "name": "fully_connected",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 20:08:29 2025",
+ "timestampMillis": "1747746509872",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer/_x/reports/fully_cunnected/system_estimate_fully_cunnected.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 20 20:08:30 2025",
+ "timestampMillis": "1747746510783",
+ "status": {
+  "cmdId": "cd5b3c73-dab8-4bb9-9f08-c2574111a46c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 20:08:30 2025",
+ "timestampMillis": "1747746510853",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer/_x/reports/fully_cunnected/v++_compile_fully_cunnected_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 20:08:30 2025",
+ "timestampMillis": "1747746510853",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/fully_connected_layer/_x/v++_compile_fully_cunnected_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

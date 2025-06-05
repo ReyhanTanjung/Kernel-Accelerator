@@ -1,0 +1,238 @@
+<ENTRY>
+{
+ "thisFile": "/home/vlsi-elka/vitis_hls_project/gemm_2/gemm.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat May 10 14:15:10 2025",
+ "timestampMillis": "1746861310463",
+ "buildStep": {
+  "cmdId": "6fc4010c-9ba0-47b7-8121-e4c89c3300ec",
+  "name": "v++",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/gemm_2/_x/gemm/gemm.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c --target hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 -k gemm -I . -o gemm.xo gemm.cpp ",
+  "args": [
+   "-c",
+   "--target",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-k",
+   "gemm",
+   "-I",
+   ".",
+   "-o",
+   "gemm.xo",
+   "gemm.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/gemm_2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat May 10 14:15:10 2025",
+ "timestampMillis": "1746861310463",
+ "status": {
+  "cmdId": "6fc4010c-9ba0-47b7-8121-e4c89c3300ec",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat May 10 14:15:14 2025",
+ "timestampMillis": "1746861314547",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "gemm",
+     "file": "/home/vlsi-elka/vitis_hls_project/gemm_2/gemm.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vlsi-elka/vitis_hls_project/gemm_2/gemm.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.2. SW Build 5239630 on 2024-11-10-11:19:46"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat May 10 14:15:14 2025",
+ "timestampMillis": "1746861314549",
+ "buildStep": {
+  "cmdId": "2f24273c-0702-4fbd-84a2-36235553c52a",
+  "name": "vitis_hls",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/gemm_2/_x/gemm/gemm/vitis_hls.log",
+  "commandLine": "-exec vitis_hls -f gemm.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "-exec",
+   "vitis_hls",
+   "-f",
+   "gemm.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/gemm_2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat May 10 14:15:14 2025",
+ "timestampMillis": "1746861314549",
+ "status": {
+  "cmdId": "2f24273c-0702-4fbd-84a2-36235553c52a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat May 10 14:15:53 2025",
+ "timestampMillis": "1746861353759",
+ "status": {
+  "cmdId": "2f24273c-0702-4fbd-84a2-36235553c52a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat May 10 14:15:53 2025",
+ "timestampMillis": "1746861353795",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/gemm_2/_x/gemm/gemm/gemm/solution/.autopilot/db/gemm.design.xml",
+  "name": "gemm",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat May 10 14:15:53 2025",
+ "timestampMillis": "1746861353796",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/gemm_2/_x/gemm/gemm/gemm/solution/.autopilot/db/.message_syn.xml",
+  "name": "gemm",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat May 10 14:15:53 2025",
+ "timestampMillis": "1746861353796",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/gemm_2/_x/reports/gemm/hls_reports/gemm_csynth.rpt",
+  "name": "gemm",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat May 10 14:15:53 2025",
+ "timestampMillis": "1746861353797",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/gemm_2/_x/gemm/gemm/gemm/solution/syn/report/gemm_csynth.xml",
+  "name": "gemm",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat May 10 14:15:53 2025",
+ "timestampMillis": "1746861353803",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/gemm_2/_x/reports/gemm/system_estimate_gemm.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat May 10 14:15:55 2025",
+ "timestampMillis": "1746861355014",
+ "status": {
+  "cmdId": "6fc4010c-9ba0-47b7-8121-e4c89c3300ec",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat May 10 14:15:55 2025",
+ "timestampMillis": "1746861355087",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/gemm_2/_x/reports/gemm/v++_compile_gemm_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat May 10 14:15:55 2025",
+ "timestampMillis": "1746861355088",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/gemm_2/_x/v++_compile_gemm_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,238 @@
+<ENTRY>
+{
+ "thisFile": "/home/vlsi-elka/vitis_hls_project/pooling/pooling.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue May 13 10:19:18 2025",
+ "timestampMillis": "1747106358501",
+ "buildStep": {
+  "cmdId": "801d34ca-eed1-4315-9e71-fdf82c204142",
+  "name": "v++",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/pooling/_x/pooling/pooling.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c --target hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 -k pooling -I . -o pooling.xo pooling.cpp ",
+  "args": [
+   "-c",
+   "--target",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-k",
+   "pooling",
+   "-I",
+   ".",
+   "-o",
+   "pooling.xo",
+   "pooling.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pooling"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 13 10:19:18 2025",
+ "timestampMillis": "1747106358502",
+ "status": {
+  "cmdId": "801d34ca-eed1-4315-9e71-fdf82c204142",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue May 13 10:19:22 2025",
+ "timestampMillis": "1747106362606",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "pooling",
+     "file": "/home/vlsi-elka/vitis_hls_project/pooling/pooling.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vlsi-elka/vitis_hls_project/pooling/pooling.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.2. SW Build 5239630 on 2024-11-10-11:19:46"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue May 13 10:19:22 2025",
+ "timestampMillis": "1747106362608",
+ "buildStep": {
+  "cmdId": "340dccf6-9d77-45d3-a0c9-65823f468b48",
+  "name": "vitis_hls",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/pooling/_x/pooling/pooling/vitis_hls.log",
+  "commandLine": "-exec vitis_hls -f pooling.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "-exec",
+   "vitis_hls",
+   "-f",
+   "pooling.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pooling"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 13 10:19:22 2025",
+ "timestampMillis": "1747106362608",
+ "status": {
+  "cmdId": "340dccf6-9d77-45d3-a0c9-65823f468b48",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 13 10:20:00 2025",
+ "timestampMillis": "1747106400422",
+ "status": {
+  "cmdId": "340dccf6-9d77-45d3-a0c9-65823f468b48",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 10:20:00 2025",
+ "timestampMillis": "1747106400470",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pooling/_x/pooling/pooling/pooling/solution/.autopilot/db/pooling.design.xml",
+  "name": "pooling",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 10:20:00 2025",
+ "timestampMillis": "1747106400471",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pooling/_x/pooling/pooling/pooling/solution/.autopilot/db/.message_syn.xml",
+  "name": "pooling",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 10:20:00 2025",
+ "timestampMillis": "1747106400472",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pooling/_x/reports/pooling/hls_reports/pooling_csynth.rpt",
+  "name": "pooling",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 10:20:00 2025",
+ "timestampMillis": "1747106400472",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pooling/_x/pooling/pooling/pooling/solution/syn/report/pooling_csynth.xml",
+  "name": "pooling",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 10:20:00 2025",
+ "timestampMillis": "1747106400476",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pooling/_x/reports/pooling/system_estimate_pooling.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 13 10:20:02 2025",
+ "timestampMillis": "1747106402212",
+ "status": {
+  "cmdId": "801d34ca-eed1-4315-9e71-fdf82c204142",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 10:20:02 2025",
+ "timestampMillis": "1747106402283",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pooling/_x/reports/pooling/v++_compile_pooling_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 10:20:02 2025",
+ "timestampMillis": "1747106402283",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pooling/_x/v++_compile_pooling_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

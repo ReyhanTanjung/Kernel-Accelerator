@@ -1,0 +1,238 @@
+<ENTRY>
+{
+ "thisFile": "/home/vlsi-elka/vitis_hls_project/sha/sha256.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jun  4 14:13:38 2025",
+ "timestampMillis": "1749021218113",
+ "buildStep": {
+  "cmdId": "ea5afaf7-a95c-4304-824b-b5820d22f314",
+  "name": "v++",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/sha/_x/sha256/sha256.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c --target hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 -k sha256_hash -I . -o sha256.xo sha256.cpp ",
+  "args": [
+   "-c",
+   "--target",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-k",
+   "sha256_hash",
+   "-I",
+   ".",
+   "-o",
+   "sha256.xo",
+   "sha256.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/sha"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 14:13:38 2025",
+ "timestampMillis": "1749021218113",
+ "status": {
+  "cmdId": "ea5afaf7-a95c-4304-824b-b5820d22f314",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Jun  4 14:13:42 2025",
+ "timestampMillis": "1749021222473",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sha256_hash",
+     "file": "/home/vlsi-elka/vitis_hls_project/sha/sha256.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vlsi-elka/vitis_hls_project/sha/sha256.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.2. SW Build 5239630 on 2024-11-10-11:19:46"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Jun  4 14:13:42 2025",
+ "timestampMillis": "1749021222475",
+ "buildStep": {
+  "cmdId": "bc3b47e3-2974-4f55-a84f-8058ab985734",
+  "name": "vitis_hls",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/sha/_x/sha256/sha256_hash/vitis_hls.log",
+  "commandLine": "-exec vitis_hls -f sha256_hash.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "-exec",
+   "vitis_hls",
+   "-f",
+   "sha256_hash.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/sha"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 14:13:42 2025",
+ "timestampMillis": "1749021222475",
+ "status": {
+  "cmdId": "bc3b47e3-2974-4f55-a84f-8058ab985734",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 14:14:32 2025",
+ "timestampMillis": "1749021272689",
+ "status": {
+  "cmdId": "bc3b47e3-2974-4f55-a84f-8058ab985734",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun  4 14:14:32 2025",
+ "timestampMillis": "1749021272696",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/sha/_x/sha256/sha256_hash/sha256_hash/solution/.autopilot/db/sha256_hash.design.xml",
+  "name": "sha256_hash",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun  4 14:14:32 2025",
+ "timestampMillis": "1749021272697",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/sha/_x/sha256/sha256_hash/sha256_hash/solution/.autopilot/db/.message_syn.xml",
+  "name": "sha256_hash",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun  4 14:14:32 2025",
+ "timestampMillis": "1749021272698",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/sha/_x/reports/sha256/hls_reports/sha256_hash_csynth.rpt",
+  "name": "sha256_hash",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun  4 14:14:32 2025",
+ "timestampMillis": "1749021272699",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/sha/_x/sha256/sha256_hash/sha256_hash/solution/syn/report/sha256_hash_csynth.xml",
+  "name": "sha256_hash",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun  4 14:14:32 2025",
+ "timestampMillis": "1749021272703",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/sha/_x/reports/sha256/system_estimate_sha256.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 14:14:32 2025",
+ "timestampMillis": "1749021272793",
+ "status": {
+  "cmdId": "ea5afaf7-a95c-4304-824b-b5820d22f314",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun  4 14:14:32 2025",
+ "timestampMillis": "1749021272871",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/sha/_x/reports/sha256/v++_compile_sha256_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun  4 14:14:32 2025",
+ "timestampMillis": "1749021272872",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/sha/_x/v++_compile_sha256_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

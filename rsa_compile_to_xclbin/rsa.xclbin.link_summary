@@ -1,0 +1,479 @@
+<ENTRY>
+{
+ "thisFile": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/rsa.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jun  4 18:12:11 2025",
+ "timestampMillis": "1749035531759",
+ "buildStep": {
+  "cmdId": "ff311d1b-64f7-4006-b15a-b3967d91d505",
+  "name": "v++",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l --target hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 -o rsa.xclbin rsa.xo ",
+  "args": [
+   "-l",
+   "--target",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-o",
+   "rsa.xclbin",
+   "rsa.xo"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 18:12:11 2025",
+ "timestampMillis": "1749035531759",
+ "status": {
+  "cmdId": "ff311d1b-64f7-4006-b15a-b3967d91d505",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Jun  4 18:12:16 2025",
+ "timestampMillis": "1749035536311",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "rsa",
+    "file": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/rsa.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "rsa_encrypt",
+     "file": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/rsa.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/xo/rsa_encrypt/rsa_encrypt/cpu_sources/rsa.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "rsa_encrypt_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.2. SW Build 5239630 on 2024-11-10-11:19:46"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Jun  4 18:12:16 2025",
+ "timestampMillis": "1749035536494",
+ "buildStep": {
+  "cmdId": "3019a72f-81fb-4eb1-ae70-edb594205e05",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/rsa.xo --xpfm /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm --target hw --output_dir /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int --temp_dir /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/rsa.xo",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int",
+   "--temp_dir",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/sys_link"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 18:12:16 2025",
+ "timestampMillis": "1749035536494",
+ "status": {
+  "cmdId": "3019a72f-81fb-4eb1-ae70-edb594205e05",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 18:12:27 2025",
+ "timestampMillis": "1749035547438",
+ "status": {
+  "cmdId": "3019a72f-81fb-4eb1-ae70-edb594205e05",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Jun  4 18:12:27 2025",
+ "timestampMillis": "1749035547440",
+ "buildStep": {
+  "cmdId": "a88f62be-ced0-4b67-8298-887d93277463",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/sdsl.dat -rtd /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/cf2sw.rtd -nofilter /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/cf2sw_full.rtd -xclbin /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/xclbin_orig.xml -o /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 18:12:27 2025",
+ "timestampMillis": "1749035547440",
+ "status": {
+  "cmdId": "a88f62be-ced0-4b67-8298-887d93277463",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 18:12:31 2025",
+ "timestampMillis": "1749035551433",
+ "status": {
+  "cmdId": "a88f62be-ced0-4b67-8298-887d93277463",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Jun  4 18:12:31 2025",
+ "timestampMillis": "1749035551435",
+ "buildStep": {
+  "cmdId": "55eed7e7-3a6c-4e45-83d5-c07ba48368a2",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 18:12:31 2025",
+ "timestampMillis": "1749035551436",
+ "status": {
+  "cmdId": "55eed7e7-3a6c-4e45-83d5-c07ba48368a2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun  4 18:12:31 2025",
+ "timestampMillis": "1749035551785",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 18:12:31 2025",
+ "timestampMillis": "1749035551785",
+ "status": {
+  "cmdId": "55eed7e7-3a6c-4e45-83d5-c07ba48368a2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Jun  4 18:12:31 2025",
+ "timestampMillis": "1749035551787",
+ "buildStep": {
+  "cmdId": "0bde2924-4020-4d3a-9071-9c61c943101b",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u250_gen3x16_xdma_4_1_202210_1 --remote_ip_cache /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/.ipcache --output_dir /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int --log_dir /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/logs/link --report_dir /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/reports/link --config /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/vplConfig.ini -k /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link --no-info --iprepo /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/xo/ip_repo/xilinx_com_hls_rsa_encrypt_1_0 --messageDb /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/run_link/vpl.pb /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "--remote_ip_cache",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/.ipcache",
+   "--output_dir",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int",
+   "--log_dir",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/logs/link",
+   "--report_dir",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/reports/link",
+   "--config",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/vplConfig.ini",
+   "-k",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link",
+   "--no-info",
+   "--iprepo",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/xo/ip_repo/xilinx_com_hls_rsa_encrypt_1_0",
+   "--messageDb",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/run_link/vpl.pb",
+   "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin\nmisc=BinaryName=rsa\n\n[connectivity]\nnk=rsa_encrypt:1:rsa_encrypt_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 18:12:31 2025",
+ "timestampMillis": "1749035551788",
+ "status": {
+  "cmdId": "0bde2924-4020-4d3a-9071-9c61c943101b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jun  4 18:12:33 2025",
+ "timestampMillis": "1749035553432",
+ "buildStep": {
+  "cmdId": "4d43df25-4911-4a8e-937c-f4646de1c723",
+  "name": "vpl",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u250_gen3x16_xdma_4_1_202210_1 --remote_ip_cache /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/.ipcache --output_dir /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int --log_dir /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/logs/link --report_dir /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/reports/link --config /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/vplConfig.ini -k /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link --no-info --iprepo /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/xo/ip_repo/xilinx_com_hls_rsa_encrypt_1_0 --messageDb /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/run_link/vpl.pb /home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 18:12:33 2025",
+ "timestampMillis": "1749035553432",
+ "status": {
+  "cmdId": "4d43df25-4911-4a8e-937c-f4646de1c723",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Wed Jun  4 18:12:37 2025",
+ "timestampMillis": "1749035557801",
+ "vivadoProject": {
+  "openDir": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Jun  4 18:12:37 2025",
+ "timestampMillis": "1749035557802",
+ "buildStep": {
+  "cmdId": "c50557eb-dbcd-4823-b49a-81abba8d8dde",
+  "name": "vivado",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  4 18:12:37 2025",
+ "timestampMillis": "1749035557802",
+ "status": {
+  "cmdId": "c50557eb-dbcd-4823-b49a-81abba8d8dde",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun  4 18:14:56 2025",
+ "timestampMillis": "1749035696231",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/link/int/automation_summary_pre_synthesis.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun  5 00:26:48 2025",
+ "timestampMillis": "1749058008035",
+ "status": {
+  "cmdId": "c50557eb-dbcd-4823-b49a-81abba8d8dde",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun  5 00:26:59 2025",
+ "timestampMillis": "1749058019341",
+ "status": {
+  "cmdId": "4d43df25-4911-4a8e-937c-f4646de1c723",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun  5 00:27:04 2025",
+ "timestampMillis": "1749058024882",
+ "status": {
+  "cmdId": "0bde2924-4020-4d3a-9071-9c61c943101b",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun  5 00:27:05 2025",
+ "timestampMillis": "1749058025268",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun  5 00:27:05 2025",
+ "timestampMillis": "1749058025365",
+ "status": {
+  "cmdId": "ff311d1b-64f7-4006-b15a-b3967d91d505",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun  5 00:27:06 2025",
+ "timestampMillis": "1749058026976",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/reports/link/v++_link_rsa_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun  5 00:27:06 2025",
+ "timestampMillis": "1749058026976",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/rsa_compile_to_xclbin/_x/v++_link_rsa_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

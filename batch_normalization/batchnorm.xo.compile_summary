@@ -1,0 +1,238 @@
+<ENTRY>
+{
+ "thisFile": "/home/vlsi-elka/vitis_hls_project/batch_normalization/batchnorm.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue May 13 13:53:50 2025",
+ "timestampMillis": "1747119230433",
+ "buildStep": {
+  "cmdId": "dbc1e0d7-fa47-4f35-b9ee-b09543a7a8b8",
+  "name": "v++",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/batch_normalization/_x/batchnorm/batchnorm.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c --target hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 -k batchnorm -I . -o batchnorm.xo batchnorm.cpp ",
+  "args": [
+   "-c",
+   "--target",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-k",
+   "batchnorm",
+   "-I",
+   ".",
+   "-o",
+   "batchnorm.xo",
+   "batchnorm.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/batch_normalization"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 13 13:53:50 2025",
+ "timestampMillis": "1747119230433",
+ "status": {
+  "cmdId": "dbc1e0d7-fa47-4f35-b9ee-b09543a7a8b8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue May 13 13:53:54 2025",
+ "timestampMillis": "1747119234531",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "batchnorm",
+     "file": "/home/vlsi-elka/vitis_hls_project/batch_normalization/batchnorm.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vlsi-elka/vitis_hls_project/batch_normalization/batchnorm.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.2. SW Build 5239630 on 2024-11-10-11:19:46"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue May 13 13:53:54 2025",
+ "timestampMillis": "1747119234533",
+ "buildStep": {
+  "cmdId": "70929951-5698-4398-853f-a82838cad06e",
+  "name": "vitis_hls",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/batch_normalization/_x/batchnorm/batchnorm/vitis_hls.log",
+  "commandLine": "-exec vitis_hls -f batchnorm.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "-exec",
+   "vitis_hls",
+   "-f",
+   "batchnorm.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/batch_normalization"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 13 13:53:54 2025",
+ "timestampMillis": "1747119234533",
+ "status": {
+  "cmdId": "70929951-5698-4398-853f-a82838cad06e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 13 13:54:34 2025",
+ "timestampMillis": "1747119274871",
+ "status": {
+  "cmdId": "70929951-5698-4398-853f-a82838cad06e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 13:54:34 2025",
+ "timestampMillis": "1747119274938",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/batch_normalization/_x/batchnorm/batchnorm/batchnorm/solution/.autopilot/db/batchnorm.design.xml",
+  "name": "batchnorm",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 13:54:34 2025",
+ "timestampMillis": "1747119274938",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/batch_normalization/_x/batchnorm/batchnorm/batchnorm/solution/.autopilot/db/.message_syn.xml",
+  "name": "batchnorm",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 13:54:34 2025",
+ "timestampMillis": "1747119274939",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/batch_normalization/_x/reports/batchnorm/hls_reports/batchnorm_csynth.rpt",
+  "name": "batchnorm",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 13:54:34 2025",
+ "timestampMillis": "1747119274939",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/batch_normalization/_x/batchnorm/batchnorm/batchnorm/solution/syn/report/batchnorm_csynth.xml",
+  "name": "batchnorm",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 13:54:34 2025",
+ "timestampMillis": "1747119274942",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/batch_normalization/_x/reports/batchnorm/system_estimate_batchnorm.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 13 13:54:37 2025",
+ "timestampMillis": "1747119277492",
+ "status": {
+  "cmdId": "dbc1e0d7-fa47-4f35-b9ee-b09543a7a8b8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 13:54:37 2025",
+ "timestampMillis": "1747119277562",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/batch_normalization/_x/reports/batchnorm/v++_compile_batchnorm_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 13 13:54:37 2025",
+ "timestampMillis": "1747119277562",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/batch_normalization/_x/v++_compile_batchnorm_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

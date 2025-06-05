@@ -1,0 +1,238 @@
+<ENTRY>
+{
+ "thisFile": "/home/vlsi-elka/vitis_hls_project/activation_function/activation.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon May 12 15:10:15 2025",
+ "timestampMillis": "1747037415438",
+ "buildStep": {
+  "cmdId": "50aed517-8077-4a8d-9a29-c5c3d2444553",
+  "name": "v++",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/activation_function/_x/activation/activation.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c --target hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 -k activation_kernel -I . -o activation.xo activation.cpp ",
+  "args": [
+   "-c",
+   "--target",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-k",
+   "activation_kernel",
+   "-I",
+   ".",
+   "-o",
+   "activation.xo",
+   "activation.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/activation_function"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 12 15:10:15 2025",
+ "timestampMillis": "1747037415438",
+ "status": {
+  "cmdId": "50aed517-8077-4a8d-9a29-c5c3d2444553",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon May 12 15:10:19 2025",
+ "timestampMillis": "1747037419492",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "activation_kernel",
+     "file": "/home/vlsi-elka/vitis_hls_project/activation_function/activation.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vlsi-elka/vitis_hls_project/activation_function/activation.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.2. SW Build 5239630 on 2024-11-10-11:19:46"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May 12 15:10:19 2025",
+ "timestampMillis": "1747037419494",
+ "buildStep": {
+  "cmdId": "cd00c697-c59a-45f8-b0a7-24e5449f3b6b",
+  "name": "vitis_hls",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/activation_function/_x/activation/activation_kernel/vitis_hls.log",
+  "commandLine": "-exec vitis_hls -f activation_kernel.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "-exec",
+   "vitis_hls",
+   "-f",
+   "activation_kernel.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/activation_function"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 12 15:10:19 2025",
+ "timestampMillis": "1747037419494",
+ "status": {
+  "cmdId": "cd00c697-c59a-45f8-b0a7-24e5449f3b6b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 12 15:11:15 2025",
+ "timestampMillis": "1747037475554",
+ "status": {
+  "cmdId": "cd00c697-c59a-45f8-b0a7-24e5449f3b6b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 15:11:15 2025",
+ "timestampMillis": "1747037475627",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/activation_function/_x/activation/activation_kernel/activation_kernel/solution/.autopilot/db/activation_kernel.design.xml",
+  "name": "activation_kernel",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 15:11:15 2025",
+ "timestampMillis": "1747037475628",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/activation_function/_x/activation/activation_kernel/activation_kernel/solution/.autopilot/db/.message_syn.xml",
+  "name": "activation_kernel",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 15:11:15 2025",
+ "timestampMillis": "1747037475629",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/activation_function/_x/reports/activation/hls_reports/activation_kernel_csynth.rpt",
+  "name": "activation_kernel",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 15:11:15 2025",
+ "timestampMillis": "1747037475629",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/activation_function/_x/activation/activation_kernel/activation_kernel/solution/syn/report/activation_kernel_csynth.xml",
+  "name": "activation_kernel",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 15:11:15 2025",
+ "timestampMillis": "1747037475632",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/activation_function/_x/reports/activation/system_estimate_activation.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May 12 15:11:18 2025",
+ "timestampMillis": "1747037478597",
+ "status": {
+  "cmdId": "50aed517-8077-4a8d-9a29-c5c3d2444553",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 15:11:18 2025",
+ "timestampMillis": "1747037478666",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/activation_function/_x/reports/activation/v++_compile_activation_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May 12 15:11:18 2025",
+ "timestampMillis": "1747037478666",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/activation_function/_x/v++_compile_activation_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

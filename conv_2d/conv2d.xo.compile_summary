@@ -1,0 +1,238 @@
+<ENTRY>
+{
+ "thisFile": "/home/vlsi-elka/vitis_hls_project/conv/conv2d.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun May 11 16:37:23 2025",
+ "timestampMillis": "1746956243333",
+ "buildStep": {
+  "cmdId": "b338f116-191d-45db-b738-864999aaa24e",
+  "name": "v++",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/conv/_x/conv2d/conv2d.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c --target hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 -k conv2d -I . -o conv2d.xo conv2d.cpp ",
+  "args": [
+   "-c",
+   "--target",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-k",
+   "conv2d",
+   "-I",
+   ".",
+   "-o",
+   "conv2d.xo",
+   "conv2d.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/conv"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun May 11 16:37:23 2025",
+ "timestampMillis": "1746956243334",
+ "status": {
+  "cmdId": "b338f116-191d-45db-b738-864999aaa24e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun May 11 16:37:27 2025",
+ "timestampMillis": "1746956247476",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "conv2d",
+     "file": "/home/vlsi-elka/vitis_hls_project/conv/conv2d.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vlsi-elka/vitis_hls_project/conv/conv2d.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.2. SW Build 5239630 on 2024-11-10-11:19:46"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun May 11 16:37:27 2025",
+ "timestampMillis": "1746956247478",
+ "buildStep": {
+  "cmdId": "f65cbcae-d9e5-4adb-8027-26faf0636328",
+  "name": "vitis_hls",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/conv/_x/conv2d/conv2d/vitis_hls.log",
+  "commandLine": "-exec vitis_hls -f conv2d.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "-exec",
+   "vitis_hls",
+   "-f",
+   "conv2d.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/conv"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun May 11 16:37:27 2025",
+ "timestampMillis": "1746956247478",
+ "status": {
+  "cmdId": "f65cbcae-d9e5-4adb-8027-26faf0636328",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun May 11 16:38:04 2025",
+ "timestampMillis": "1746956284814",
+ "status": {
+  "cmdId": "f65cbcae-d9e5-4adb-8027-26faf0636328",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun May 11 16:38:04 2025",
+ "timestampMillis": "1746956284847",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/conv/_x/conv2d/conv2d/conv2d/solution/.autopilot/db/conv2d.design.xml",
+  "name": "conv2d",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun May 11 16:38:04 2025",
+ "timestampMillis": "1746956284847",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/conv/_x/conv2d/conv2d/conv2d/solution/.autopilot/db/.message_syn.xml",
+  "name": "conv2d",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun May 11 16:38:04 2025",
+ "timestampMillis": "1746956284848",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/conv/_x/reports/conv2d/hls_reports/conv2d_csynth.rpt",
+  "name": "conv2d",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun May 11 16:38:04 2025",
+ "timestampMillis": "1746956284848",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/conv/_x/conv2d/conv2d/conv2d/solution/syn/report/conv2d_csynth.xml",
+  "name": "conv2d",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun May 11 16:38:04 2025",
+ "timestampMillis": "1746956284853",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/conv/_x/reports/conv2d/system_estimate_conv2d.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun May 11 16:38:05 2025",
+ "timestampMillis": "1746956285793",
+ "status": {
+  "cmdId": "b338f116-191d-45db-b738-864999aaa24e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun May 11 16:38:05 2025",
+ "timestampMillis": "1746956285878",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/conv/_x/reports/conv2d/v++_compile_conv2d_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun May 11 16:38:05 2025",
+ "timestampMillis": "1746956285878",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/conv/_x/v++_compile_conv2d_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,1200 @@
+<ENTRY>
+{
+ "thisFile": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/pca_eigen.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed May 21 16:29:01 2025",
+ "timestampMillis": "1747819741486",
+ "buildStep": {
+  "cmdId": "793efe37-13d1-4482-84af-36dce91dbd1b",
+  "name": "v++",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l --target hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 -o pca_eigen.xclbin pca_eigen.xo ",
+  "args": [
+   "-l",
+   "--target",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-o",
+   "pca_eigen.xclbin",
+   "pca_eigen.xo"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 16:29:01 2025",
+ "timestampMillis": "1747819741487",
+ "status": {
+  "cmdId": "793efe37-13d1-4482-84af-36dce91dbd1b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed May 21 16:29:09 2025",
+ "timestampMillis": "1747819749762",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "pca_eigen",
+    "file": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/pca_eigen.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "pca_eigen_kernel",
+     "file": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/pca_eigen.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/xo/pca_eigen_kernel/pca_eigen_kernel/cpu_sources/pca_eigen.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "pca_eigen_kernel_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.2. SW Build 5239630 on 2024-11-10-11:19:46"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed May 21 16:29:10 2025",
+ "timestampMillis": "1747819750032",
+ "buildStep": {
+  "cmdId": "73bbb746-5a58-4590-8e73-e0ef0fb5c818",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/pca_eigen.xo --xpfm /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm --target hw --output_dir /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int --temp_dir /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/pca_eigen.xo",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int",
+   "--temp_dir",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/sys_link"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 16:29:10 2025",
+ "timestampMillis": "1747819750033",
+ "status": {
+  "cmdId": "73bbb746-5a58-4590-8e73-e0ef0fb5c818",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 16:29:24 2025",
+ "timestampMillis": "1747819764570",
+ "status": {
+  "cmdId": "73bbb746-5a58-4590-8e73-e0ef0fb5c818",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed May 21 16:29:24 2025",
+ "timestampMillis": "1747819764572",
+ "buildStep": {
+  "cmdId": "eeb87b27-f9f6-4950-897f-b71a623d500b",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/sdsl.dat -rtd /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/cf2sw.rtd -nofilter /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/cf2sw_full.rtd -xclbin /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/xclbin_orig.xml -o /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 16:29:24 2025",
+ "timestampMillis": "1747819764572",
+ "status": {
+  "cmdId": "eeb87b27-f9f6-4950-897f-b71a623d500b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 16:29:30 2025",
+ "timestampMillis": "1747819770766",
+ "status": {
+  "cmdId": "eeb87b27-f9f6-4950-897f-b71a623d500b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed May 21 16:29:30 2025",
+ "timestampMillis": "1747819770769",
+ "buildStep": {
+  "cmdId": "6737af37-14f0-40e5-9c13-6a439b7d984b",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 16:29:30 2025",
+ "timestampMillis": "1747819770769",
+ "status": {
+  "cmdId": "6737af37-14f0-40e5-9c13-6a439b7d984b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 16:29:31 2025",
+ "timestampMillis": "1747819771221",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 16:29:31 2025",
+ "timestampMillis": "1747819771222",
+ "status": {
+  "cmdId": "6737af37-14f0-40e5-9c13-6a439b7d984b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed May 21 16:29:31 2025",
+ "timestampMillis": "1747819771223",
+ "buildStep": {
+  "cmdId": "e2c3f764-b878-49d6-966a-ce6a62381d7c",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u250_gen3x16_xdma_4_1_202210_1 --remote_ip_cache /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/.ipcache --output_dir /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int --log_dir /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/logs/link --report_dir /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link --config /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/vplConfig.ini -k /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link --no-info --iprepo /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/xo/ip_repo/xilinx_com_hls_pca_eigen_kernel_1_0 --messageDb /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/run_link/vpl.pb /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "--remote_ip_cache",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/.ipcache",
+   "--output_dir",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int",
+   "--log_dir",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/logs/link",
+   "--report_dir",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link",
+   "--config",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/vplConfig.ini",
+   "-k",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link",
+   "--no-info",
+   "--iprepo",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/xo/ip_repo/xilinx_com_hls_pca_eigen_kernel_1_0",
+   "--messageDb",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/run_link/vpl.pb",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost\nmisc=BinaryName=pca_eigen\n\n[connectivity]\nnk=pca_eigen_kernel:1:pca_eigen_kernel_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 16:29:31 2025",
+ "timestampMillis": "1747819771224",
+ "status": {
+  "cmdId": "e2c3f764-b878-49d6-966a-ce6a62381d7c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed May 21 16:29:33 2025",
+ "timestampMillis": "1747819773036",
+ "buildStep": {
+  "cmdId": "86763c70-b593-4465-bb63-711bd0c5614b",
+  "name": "vpl",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u250_gen3x16_xdma_4_1_202210_1 --remote_ip_cache /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/.ipcache --output_dir /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int --log_dir /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/logs/link --report_dir /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link --config /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/vplConfig.ini -k /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link --no-info --iprepo /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/xo/ip_repo/xilinx_com_hls_pca_eigen_kernel_1_0 --messageDb /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/run_link/vpl.pb /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 16:29:33 2025",
+ "timestampMillis": "1747819773036",
+ "status": {
+  "cmdId": "86763c70-b593-4465-bb63-711bd0c5614b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Wed May 21 16:29:38 2025",
+ "timestampMillis": "1747819778567",
+ "vivadoProject": {
+  "openDir": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed May 21 16:29:38 2025",
+ "timestampMillis": "1747819778568",
+ "buildStep": {
+  "cmdId": "3090bc10-03c1-4cbb-88e0-6a9aed9dcc18",
+  "name": "vivado",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 16:29:38 2025",
+ "timestampMillis": "1747819778568",
+ "status": {
+  "cmdId": "3090bc10-03c1-4cbb-88e0-6a9aed9dcc18",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 16:31:59 2025",
+ "timestampMillis": "1747819919841",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/automation_summary_pre_synthesis.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed May 21 16:34:26 2025",
+ "timestampMillis": "1747820066741",
+ "buildStep": {
+  "cmdId": "13f41197-233c-4ca3-b1b0-97577d7de1ec",
+  "name": "vivado.impl",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/vivado/vpl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 16:34:26 2025",
+ "timestampMillis": "1747820066742",
+ "status": {
+  "cmdId": "13f41197-233c-4ca3-b1b0-97577d7de1ec",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed May 21 16:34:26 2025",
+ "timestampMillis": "1747820066742",
+ "buildStep": {
+  "cmdId": "7ec47402-6ca8-4017-bfcd-22d8d1d852d9",
+  "name": "vivado.impl.impl_1",
+  "logFile": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/vivado/vpl/prj/prj.runs/impl_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 16:34:26 2025",
+ "timestampMillis": "1747820066742",
+ "status": {
+  "cmdId": "7ec47402-6ca8-4017-bfcd-22d8d1d852d9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:26:23 2025",
+ "timestampMillis": "1747823183474",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/vivado/vpl/prj/prj.runs/impl_1/system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:27:25 2025",
+ "timestampMillis": "1747823245762",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/kernel_service.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:27:25 2025",
+ "timestampMillis": "1747823245763",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/kernel_service.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:28:17 2025",
+ "timestampMillis": "1747823297636",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/vivado/vpl/prj/prj.runs/impl_1/dr_timing_summary.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_FAIL",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865629",
+ "status": {
+  "cmdId": "3090bc10-03c1-4cbb-88e0-6a9aed9dcc18",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865673",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865674",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865674",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_full_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865675",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865675",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865676",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_full_util_synthed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865676",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_full_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865676",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_full_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865677",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_kernel_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865677",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865677",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865678",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865678",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865678",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865679",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865679",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865691",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": "7ec47402-6ca8-4017-bfcd-22d8d1d852d9"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865700",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "7ec47402-6ca8-4017-bfcd-22d8d1d852d9"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865709",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "7ec47402-6ca8-4017-bfcd-22d8d1d852d9"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865710",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpv",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_CONCISE",
+  "cmdId": "7ec47402-6ca8-4017-bfcd-22d8d1d852d9"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865787",
+ "status": {
+  "cmdId": "86763c70-b593-4465-bb63-711bd0c5614b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865802",
+ "status": {
+  "cmdId": "e2c3f764-b878-49d6-966a-ce6a62381d7c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865803",
+ "buildStep": {
+  "cmdId": "f0d0ae1d-7e6e-4f81-80c2-9d331044ad7d",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865804",
+ "status": {
+  "cmdId": "f0d0ae1d-7e6e-4f81-80c2-9d331044ad7d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865808",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865810",
+ "buildStep": {
+  "cmdId": "82edd707-851c-4468-b406-010fce7cb0fa",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/address_map.xml -sdsl /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/sdsl.dat -xclbin /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/xclbin_orig.xml -rtd /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen.rtd -o /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen.xml",
+  "args": [
+   "-a",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/address_map.xml",
+   "-sdsl",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen.rtd",
+   "-o",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:45 2025",
+ "timestampMillis": "1747823865810",
+ "status": {
+  "cmdId": "82edd707-851c-4468-b406-010fce7cb0fa",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:48 2025",
+ "timestampMillis": "1747823868892",
+ "status": {
+  "cmdId": "82edd707-851c-4468-b406-010fce7cb0fa",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed May 21 17:37:48 2025",
+ "timestampMillis": "1747823868893",
+ "buildStep": {
+  "cmdId": "d494c272-4df1-45aa-afa1-d74400b1e597",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen.rtd",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:48 2025",
+ "timestampMillis": "1747823868893",
+ "status": {
+  "cmdId": "d494c272-4df1-45aa-afa1-d74400b1e597",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:48 2025",
+ "timestampMillis": "1747823868894",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:48 2025",
+ "timestampMillis": "1747823868895",
+ "status": {
+  "cmdId": "d494c272-4df1-45aa-afa1-d74400b1e597",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed May 21 17:37:48 2025",
+ "timestampMillis": "1747823868895",
+ "buildStep": {
+  "cmdId": "3c5697ed-cdf6-4421-b9b2-74aa235f9983",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeAutomationSummary",
+  "args": [
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/automation_summary.txt"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:48 2025",
+ "timestampMillis": "1747823868895",
+ "status": {
+  "cmdId": "3c5697ed-cdf6-4421-b9b2-74aa235f9983",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:48 2025",
+ "timestampMillis": "1747823868896",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/automation_summary.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:48 2025",
+ "timestampMillis": "1747823868896",
+ "status": {
+  "cmdId": "3c5697ed-cdf6-4421-b9b2-74aa235f9983",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:48 2025",
+ "timestampMillis": "1747823868897",
+ "status": {
+  "cmdId": "f0d0ae1d-7e6e-4f81-80c2-9d331044ad7d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed May 21 17:37:48 2025",
+ "timestampMillis": "1747823868899",
+ "buildStep": {
+  "cmdId": "1de03815-732a-4fba-9fbf-55f252ff4b8c",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen.rtd --append-section :JSON:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen_xml.rtd --add-section BUILD_METADATA:JSON:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen.xml --add-section SYSTEM_METADATA:RAW:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u250_gen3x16_xdma_4_1_202210_1 --output /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/pca_eigen.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/partial.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:true",
+   "--add-section",
+   ":JSON:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen.rtd",
+   "--append-section",
+   ":JSON:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/pca_eigen.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "--output",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/pca_eigen.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:48 2025",
+ "timestampMillis": "1747823868899",
+ "status": {
+  "cmdId": "1de03815-732a-4fba-9fbf-55f252ff4b8c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:49 2025",
+ "timestampMillis": "1747823869020",
+ "status": {
+  "cmdId": "1de03815-732a-4fba-9fbf-55f252ff4b8c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed May 21 17:37:49 2025",
+ "timestampMillis": "1747823869022",
+ "buildStep": {
+  "cmdId": "39e89d99-50cf-4e66-9753-9e696388ff5c",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/pca_eigen.xclbin.info --input /home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/pca_eigen.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/pca_eigen.xclbin.info",
+   "--input",
+   "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/pca_eigen.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:49 2025",
+ "timestampMillis": "1747823869022",
+ "status": {
+  "cmdId": "39e89d99-50cf-4e66-9753-9e696388ff5c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:49 2025",
+ "timestampMillis": "1747823869390",
+ "status": {
+  "cmdId": "39e89d99-50cf-4e66-9753-9e696388ff5c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:49 2025",
+ "timestampMillis": "1747823869421",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/system_estimate_pca_eigen.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:49 2025",
+ "timestampMillis": "1747823869661",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed May 21 17:37:49 2025",
+ "timestampMillis": "1747823869662",
+ "status": {
+  "cmdId": "793efe37-13d1-4482-84af-36dce91dbd1b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:49 2025",
+ "timestampMillis": "1747823869732",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/reports/link/v++_link_pca_eigen_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed May 21 17:37:49 2025",
+ "timestampMillis": "1747823869732",
+ "report": {
+  "path": "/home/vlsi-elka/vitis_hls_project/pca-eigenvalue-accelerator_ongoing_minhost/_x/v++_link_pca_eigen_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
