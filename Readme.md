@@ -57,7 +57,9 @@ vitis_hls_project/
 
 | Nama Algoritma     | C-Sim | C-Synth | Co-Sim | Export IP | Catatan           |
 |--------------------|:-----:|:-------:|:------:|:---------:|--------------------|
-| `vadd_example`     | [ ]   | [ ]     | [ ]    | [ ]       |                    |
+| `vadd_example`     | [x]   | [x]     | [x]    | [x]       |                    |
+| `matrix_mult`     | [x]   | [x]     | [x]    | [x]       |                    |
+
 
 ---
 
