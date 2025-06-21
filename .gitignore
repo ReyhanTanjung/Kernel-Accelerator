@@ -1,2 +1,6 @@
 **/*.log
 */*/
+**/*.ltx
+**/*.xo.compile_summary
+**/*.xclbin.link_summary
+**/*.xclbin.info

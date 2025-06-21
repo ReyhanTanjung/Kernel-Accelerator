@@ -46,7 +46,7 @@ int main() {
     std::cout << "Starting kernel execution...\n";
     auto start = std::chrono::high_resolution_clock::now();
 
-    // Execute the kernel once
+    // Execute the kernel once - no need for many iterations as we're testing pure performance
     auto run = kernel(a_buf, b_buf, c_buf, SIZE);
     run.wait();
 
