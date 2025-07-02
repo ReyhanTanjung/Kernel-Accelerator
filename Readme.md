@@ -28,38 +28,44 @@ vitis_hls_project/
 |-----------------------------------------|:-----:|:-------:|:------:|:---------:|-------------------------------------------|
 | `activation_function`                   | [x]   | [x]     | [x]    | [x]       |                                           |
 | `batch_normalization`                   | [x]   | [x]     | [x]    | [x]       |                                           |
-| `conv_2d`                               | [x]   | [x]     | [x]    | [x]       |                                           |
+| `convolution_2d`                               | [x]   | [x]     | [x]    | [x]       |                                           |
 | `fully_connected_layer`                 | [x]   | [x]     | [x]    | [x]       |                                           |
 | `gemm`                                  | [x]   | [x]     | [x]    | [x]       |                                           |
-| `k_mean_clustering_ongoing_host`        | [x]   | [x]     | [x]    | [x]       | *Ongoing, host code*                      |
-| `pca_eigenvalue-accelerator_ongoing_minhost` | [x] | [x]     | [x]    | [x]       | *Ongoing, min host, eigenvalue*           |
+| `k_mean_clustering`        | [x]   | [x]     | [x]    | [x]       | *Ongoing, host code*                      |
+| `pca_eigenvalue` | [x] | [x]     | [x]    | [x]       | *Ongoing, min host, eigenvalue*           |
 | `pooling`                               | [x]   | [x]     | [x]    | [x]       |                                           |
 | `softmax`                               | [x]   | [x]     | [x]    | [x]       |                                           |
-| `svm_rbf_ongoing_minhost`              | [x]   | [x]     | [x]    | [x]       | *Ongoing, min host, RBF kernel*           |
+| `svm_rbf`              | [x]   | [x]     | [x]    | [x]       | *Ongoing, min host, RBF kernel*           |
 
-### Signal Processing & Science
+### Science
 
 | Nama Algoritma                          | C-Sim | C-Synth | Co-Sim | Export IP | Catatan                                  |
 |----------------------------------------|:-----:|:-------:|:------:|:---------:|-------------------------------------------|
-| `fft_ongoing_minimpl_tb`              | []   | [ ]     | [ ]    | [ ]       | *Ongoing, min impl, testbench*            |
-| `median_filter_ongoing_mincompile`    | [ ]   | [ ]     | [ ]    | [ ]       | *Ongoing, min compile*                    |
+| `fdtd`              | [x]   | [x]     | [ ]    | [ ]       | *Segmentation violation in COSIM*            |
+| `fft`    | [x]   | [x]     | []    | [ ]       | *Segmentation violation in COSIM*                    |
+| `heat_equation_solver`              | [x]   | [x]     | [ ]    | [ ]       | *Segmentation vioation in COSIM*            |
+| `mandelbrot`    | [x]   | [x]     | [x]    | [x]       |                     |
+| `prefix_sum`              | [x]   | [x]     | [x]    | [ ]       | *IP Export*            |
+| `sobel_edge_detection`    | [x]   | [x]     | []    | [ ]       | *Segmentation violation in COSIM*                    |
 
 ### Cryptography & Security
 
 | Nama Algoritma                          | C-Sim | C-Synth | Co-Sim | Export IP | Catatan                                  |
 |----------------------------------------|:-----:|:-------:|:------:|:---------:|-------------------------------------------|
-| `aes_finish`                           | [x]   | [x]     | [x]    | [x]       | *Marked as 'finish'*                      |
-| `blowfish`                             | [ ]   | [ ]     | [ ]    | [ ]       |                                           |
-| `rsa_compile_to_xclbin`               | [x]   | [x]     | [x]    | [ ]       | *Compile to xclbin*                       |
-| `sha_finish`                           | [x]   | [x]     | [x]    | [x]       | *Marked as 'finish'*                      |
-
+| `aes`                           | [x]   | [x]     | [x]    | [x]       |                       |
+| `blowfish`                             | [x]   | [x]     | [x]    | [ ]       |                                           *IP Export* |
+| `blake2s`               | [x]   | [x]     | [x]    | [ ]       | *IP Export*                       |
+| `chacha20`                           | [x]   | [x]     | [x]    | [x]       | *Comparison has not been done yet*                      |
+| `rsa`                           | [x]   | [x]     | [x]    | []       | *IP Export*  
+| `sha256`                           | [x]   | [x]     | [x]    | [x]       |   
+| `keccak sha3`                           | [x]   | [x]     | [x]    | []       | *IP Export*  
 ### Example
 
 | Nama Algoritma     | C-Sim | C-Synth | Co-Sim | Export IP | Catatan           |
 |--------------------|:-----:|:-------:|:------:|:---------:|--------------------|
 | `vadd_example`     | [x]   | [x]     | [x]    | [x]       |                    |
 | `matrix_mult`     | [x]   | [x]     | [x]    | [x]       |                    |
-
+| `median_filter`     | [x]   | [x]     | [x]    | [x]       |                    |
 
 ---
 
